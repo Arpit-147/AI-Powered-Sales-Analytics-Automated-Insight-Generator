@@ -1,7 +1,5 @@
 # Input data
 
-Place your supplied `train.csv` here. The local working copy is already populated, but `.gitignore` excludes the raw dataset because its redistribution license was not provided. The original attachment was named `train.csv`; no unverified download URL or license is claimed.
-
 The file has 9,800 order lines and 18 columns, resembling a US Superstore retail sales dataset. It covers 2015-01-03 through 2018-12-30, with 4,922 distinct orders and 793 customer IDs. Do not substitute another Superstore version and expect identical results.
 
 | Field | Interpretation |
