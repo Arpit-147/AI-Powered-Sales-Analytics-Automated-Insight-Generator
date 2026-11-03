@@ -1,0 +1,39 @@
+Write a four-sentence business sales summary using only the verified facts below. Return JSON with a sentences array in fact order; choose exactly one allowed sentence per fact. Each sentence must contain exactly one numeric amount, copied with its dollar sign and two decimals. Do not calculate, add claims, round values, add markdown, or change names; years are deliberately spelled out.
+[
+  {
+    "id": "region",
+    "label": "West",
+    "amount": "$710,219.68",
+    "allowed_sentences": [
+      "West was the leader in regional sales, with $710,219.68.",
+      "With $710,219.68 in sales, West was the leader in regional sales."
+    ]
+  },
+  {
+    "id": "category",
+    "label": "Technology",
+    "amount": "$827,455.87",
+    "allowed_sentences": [
+      "Technology was the leader in category sales, with $827,455.87.",
+      "With $827,455.87 in sales, Technology was the leader in category sales."
+    ]
+  },
+  {
+    "id": "month",
+    "label": "November of two thousand eighteen",
+    "amount": "$117,938.16",
+    "allowed_sentences": [
+      "November of two thousand eighteen was the leader in monthly sales, with $117,938.16.",
+      "With $117,938.16 in sales, November of two thousand eighteen was the leader in monthly sales."
+    ]
+  },
+  {
+    "id": "customer",
+    "label": "Sean Miller",
+    "amount": "$25,043.05",
+    "allowed_sentences": [
+      "Sean Miller was the leader in customer sales, with $25,043.05.",
+      "With $25,043.05 in sales, Sean Miller was the leader in customer sales."
+    ]
+  }
+]

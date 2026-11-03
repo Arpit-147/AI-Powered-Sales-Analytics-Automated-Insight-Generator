@@ -1,0 +1,12 @@
+[
+  {
+    "finding": "September, November and December contributed 42.97% of sales across the observed period.",
+    "action": "Plan inventory reviews and supplier lead times ahead of September, November and December; check recent SKU demand and stock availability before changing purchase quantities.",
+    "limitation": "Historical concentration varies by year and does not establish future demand or justify a fixed stock increase."
+  },
+  {
+    "finding": "The top 80 of 793 customers contributed 31.16% of sales.",
+    "action": "Use the flagged customer cohort for a retention pilot with account check-ins and tailored outreach; review purchase recency and margins before offering incentives.",
+    "limitation": "Sales concentration does not prove churn risk or customer profitability; retention uplift has not been measured."
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "total_sales": 2261536.7827000003,
+  "top_ten_customer_share_percent": 6.8011791882671995,
+  "top_ten_percent_customers": {
+    "customer_count": 80,
+    "total_customers": 793,
+    "actual_customer_share_percent": 10.08827238335435,
+    "sales": 704697.121,
+    "sales_share_percent": 31.160099910410356,
+    "selection_rule": "ceil(0.10 * distinct customers), ranked by sales descending, ties by Customer ID ascending"
+  },
+  "seasonal_concentration": {
+    "months": [
+      9,
+      11,
+      12
+    ],
+    "month_names": [
+      "September",
+      "November",
+      "December"
+    ],
+    "sales": 971745.2922,
+    "sales_share_percent": 42.96836114422398,
+    "period_start": "2015-01-03",
+    "period_end": "2018-12-30",
+    "scope": "Pooled share across the full observed period, not a constant annual share or forecast"
+  },
+  "top_region": {
+    "label": "West",
+    "sales": 710219.6845,
+    "tied_leaders": 1
+  },
+  "top_category": {
+    "label": "Technology",
+    "sales": 827455.873,
+    "tied_leaders": 1
+  },
+  "top_month": {
+    "label": "2018-11",
+    "sales": 117938.155,
+    "tied_leaders": 1
+  },
+  "top_customer": {
+    "label": "Sean Miller",
+    "sales": 25043.05,
+    "tied_leaders": 1
+  }
+}

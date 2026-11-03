@@ -1,0 +1,61 @@
+{
+  "generated_at_utc": "2026-11-02T14:36:37.906600+00:00",
+  "input_sha256": "dbb0f167b27ccf02d7ff8cb0446a9abc6dbc3522e83cf9daa6939801acfdd196",
+  "pandas_version": "2.2.3",
+  "mode": "ollama",
+  "quality": {
+    "rows": 9800,
+    "columns_raw": 18,
+    "exact_duplicates": 0,
+    "missing_postal_codes": 11,
+    "postal_policy": "Retain missing values, flag them, and include every row in sales totals; never infer a ZIP code.",
+    "date_format": "%d/%m/%Y",
+    "date_min": "2015-01-03",
+    "date_max": "2018-12-30",
+    "orders": 4922,
+    "customers": 793
+  },
+  "generation": {
+    "source": "Ollama local API",
+    "model": "llama3.2:3b",
+    "created_at": "2026-11-02T14:36:37.7632387Z",
+    "attempts": 1,
+    "rejected_attempts": [],
+    "raw_response": "{\"sentences\": [\n  \"West was the leader in regional sales, with $710,219.68.\",\n  \"Technology was the leader in category sales, with $827,455.87.\",\n  \"November of two thousand eighteen was the leader in monthly sales, with $117,938.16.\",\n  \"Sean Miller was the leader in customer sales, with $25,043.05.\"\n]}",
+    "prompt": "Write a four-sentence business sales summary using only the verified facts below. Return JSON with a sentences array in fact order; choose exactly one allowed sentence per fact. Each sentence must contain exactly one numeric amount, copied with its dollar sign and two decimals. Do not calculate, add claims, round values, add markdown, or change names; years are deliberately spelled out.\n[\n  {\n    \"id\": \"region\",\n    \"label\": \"West\",\n    \"amount\": \"$710,219.68\",\n    \"allowed_sentences\": [\n      \"West was the leader in regional sales, with $710,219.68.\",\n      \"With $710,219.68 in sales, West was the leader in regional sales.\"\n    ]\n  },\n  {\n    \"id\": \"category\",\n    \"label\": \"Technology\",\n    \"amount\": \"$827,455.87\",\n    \"allowed_sentences\": [\n      \"Technology was the leader in category sales, with $827,455.87.\",\n      \"With $827,455.87 in sales, Technology was the leader in category sales.\"\n    ]\n  },\n  {\n    \"id\": \"month\",\n    \"label\": \"November of two thousand eighteen\",\n    \"amount\": \"$117,938.16\",\n    \"allowed_sentences\": [\n      \"November of two thousand eighteen was the leader in monthly sales, with $117,938.16.\",\n      \"With $117,938.16 in sales, November of two thousand eighteen was the leader in monthly sales.\"\n    ]\n  },\n  {\n    \"id\": \"customer\",\n    \"label\": \"Sean Miller\",\n    \"amount\": \"$25,043.05\",\n    \"allowed_sentences\": [\n      \"Sean Miller was the leader in customer sales, with $25,043.05.\",\n      \"With $25,043.05 in sales, Sean Miller was the leader in customer sales.\"\n    ]\n  }\n]",
+    "validation": {
+      "passed": true,
+      "sentences_checked": 4,
+      "checks": [
+        {
+          "fact": "region",
+          "expected": "710219.68",
+          "observed": "710,219.68",
+          "passed": true
+        },
+        {
+          "fact": "category",
+          "expected": "827455.87",
+          "observed": "827,455.87",
+          "passed": true
+        },
+        {
+          "fact": "month",
+          "expected": "117938.16",
+          "observed": "117,938.16",
+          "passed": true
+        },
+        {
+          "fact": "customer",
+          "expected": "25043.05",
+          "observed": "25,043.05",
+          "passed": true
+        }
+      ],
+      "scope": "Exact numeric, currency, entity, ranking and controlled-sentence checks; not unrestricted natural-language verification."
+    },
+    "total_duration_ns": 21254723500,
+    "eval_count": 84
+  },
+  "runtime_seconds": 21.648763700010022
+}
